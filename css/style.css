@@ -27,6 +27,7 @@ body{
 }
 .flex-wrap {
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 body {
@@ -78,7 +79,7 @@ aside.main_menu {
 
 
 .covers_section {
-    background-color: #141922
+    background-color: #141922;
     padding: 20px;;
     overflow-y: auto;
     overflow-x: hidden;
@@ -109,9 +110,9 @@ nav>a{
 /* Covers section */
 .item-cover {
  
-    height: 200px;
-    background-color:  #141922
-    padding: 25px;
+    background-color:  #141922;
+
+ 
 }
 
 
