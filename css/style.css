@@ -78,7 +78,7 @@ aside.main_menu {
 
 
 .covers_section {
-    background-color: aquamarine;
+    background-color: #141922
     padding: 20px;;
     overflow-y: auto;
     overflow-x: hidden;
@@ -95,11 +95,22 @@ aside.main_menu {
     background-color: #8a2be2a1;
 
 }
+nav{
+    
+    display: flex;
+    justify-content: center;
+}
+nav>a{
+    color: grey;
+    margin-right: 3%;
+    list-style: none;
+    text-decoration: none;
+}
 /* Covers section */
 .item-cover {
-    width: 200px;
+ 
     height: 200px;
-    background-color: red;
+    background-color:  #141922
     padding: 25px;
 }
 
