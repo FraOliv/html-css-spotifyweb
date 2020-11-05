@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 1.5em;
+    font-size: 1.em;
 }
 
 /* Utility classes */
@@ -49,19 +49,20 @@ aside.main_menu {
     background-color: black;
     flex-direction: column;
     justify-content: flex-start;
+    color: lightgrey;
 }
 .logo{
-    height: 150px;
+    height: 100px;
     width: calc(100% - 50px);
     padding: 10px;
 }
-.home, .library, .search{
+.home, .library, .search, .playlist-logo{
     align-items: center;
 }
 
 
 
-.im{
+.img{
     height: 50px;
     width: 50px;
     flex: 1;
@@ -95,7 +96,7 @@ aside.main_menu {
 
 }
 /* Covers section */
-.item {
+.item-cover {
     width: 200px;
     height: 200px;
     background-color: red;
