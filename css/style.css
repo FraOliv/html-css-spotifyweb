@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 1.em;
+    font-size: 14px;
 }
 
 /* Utility classes */
@@ -113,6 +113,12 @@ nav>a{
     background-color:  #141922;
 
  
+}
+.card{
+    width: calc(100% / 6) 
+}
+.card-img{
+    width: 100%;
 }
 
 
