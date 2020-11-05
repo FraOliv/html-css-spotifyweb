@@ -8,106 +8,54 @@
         come first in the head; any other head content must come *after* these tags -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="wrapper d-flex">
-        <main id="site_content" class="d-flex">
-            <aside class="main_menu d-flex">
-                <div class="logo ">
-                    <img src="img/logo.svg" alt="" /></div>
-                    <div class="home container-side">
-                    <div class="image">
-                      <img class="img" src="img/home.svg">
-                    </div>
-                    <div class="main">
-                      <h3 class="sidebar_text">Home</h3>
-                    </div>
-                  </div>
-                  <div class="search container-side">
-                    <div class="image">
-                      <img class="img" src="img/search.svg">
-                    </div>
-                    <div class="item">
-                      <h3 class="sidebar_text">Cerca</h3>
-                    </div>
-                  </div>
-                  <div class="library container-side">
-                    <div class="image">
-                      <img class="img" src="img/libreria.svg">
-                    </div>
-                    <div class="item">
-                      <h3 class="sidebar_text">La tua Libreria</h3>
-                    </div>
-                  </div>
-                  <div class="create-playlist container-side">
-                      <h3 class="sidebar_text">Playlist</h3>
-                  </div>
-                  <div class="playlist-logo container-side">
-                    <div class="image">
-                        <img class="img" src="img/plus.png">
-                    </div>
-                    <div class="item">
-                      <h3 class="sidebar_text">Crea playlist</h3>
-                    </div>
-                    </div>
-                    <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                      <div class="Name-playlist container-side">
-                     
-                        <div class="item">
-                          <h4 class="sidebar_text">Nome playlist</h4>
-                        </div>
-                      </div>
-                    
-                  
+  <aside class="wrapper d-flex">
+    <main id="site_content" class="d-flex">
+            <!-- SIDEBAR MAIN MENU -->
+  <aside class="side-bar d-flex">
+    <div class="side-bar-top">
+      <div class="logo"><img src="./img/logo.svg" alt=""></div>
+      <div class="home">
+        <ul>
+          <li><a href="#"><img src="./img/home.svg" alt=""><span>Home</span></a></li>
+          <li><a href="#"><img src="./img/search.svg" alt=""><span>Cerca</span></a></li>
+          <li><a href="#"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
+        </ul>
+      </div>
+      <div class="playlist">
+        <h5>PLAYLIST</h5>
+        <div class="create-playlist"><a href="#"> <i class="fas fa-plus-square"></i> <span>Crea Playlist</span> </a>
+        </div>
+        <div class="name-playlist">
+          <ul>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="side-bar-bottom">
+      <div class="install"><a href=""><img src="./img/download.svg" alt=""><span>Installa app</span></a></div>
+      <div class="username"><a href="#"><img src="./img/profile.svg" alt=""><span>John Doe</span></a></div>
+    </div>
+  </aside>
 
-                            </aside>
+
+      <!-- /SIDEBAR MAIN MENU -->
             <section class="covers_section">
                 <div class="subscribe_banner">
                     lorem
                 </div>   
 
-                <nav>
+                <nav row>
                      <a href="#">IN EVIDENZA</a>
                      <a href="#">PODCAST</a>
                      <a href="#">CLASSIFICHE</a>
@@ -120,38 +68,38 @@
                 <h2>Recently played</h2>
                 <div id="recently_played" class="container-fluid">
                     <div class="row item ">
-                        <div class="col-lg-2">
+                        <div class="col-xs-12 col-md-3 col-lg-2">
                             <img class="card-img" src="img/metal_lifting.jpg">
                             <h3>Heavy Metal</h3>
                           </div>
                  
                    
-                        <div class="col-lg-2">
-                            <img class="card-img" src="img/split.jpeg">
+                        <div class="col-xs-12 col-md-3 col-lg-2">
+                            <img class="card-img" src="img/stranger.jpg">
                             <h3>Heavy Metal</h3>
                           </div>
                 
                    
-                        <div class="col-lg-2">
+                        <div class="col-xs-12 col-md-3 col-lg-2">
                             <img class="card-img" src="img/aquietplace.jpeg">
                             <h3>Heavy Metal</h3>
                           </div>
                   
                    
-                        <div class="col-lg-2">
+                        <div class="col-xs-12 col-md-3 col-lg-2">
                             <img class="card-img" src="img/split.jpeg">
                             <h3>Heavy Metal</h3>
                           </div>
                  
                    
-                        <div class="col-lg-2">
+                        <div class="col-xs-12 col-md-3 col-lg-2">
                             <img class="card-img" src="img/split.jpeg">
                             <h3>Heavy Metal</h3>
                           </div>
                   
                    
-                        <div class="col-lg-2">
-                            <img class="card-img" src="img/split.jpeg">
+                        <div class="col-xs-12 col-md-3 col-lg-2">
+                            <img class="card-img" src="img/sinister.jpeg">
                             <h3>Heavy Metal</h3>
                           </div>
                    
