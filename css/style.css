@@ -3,19 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: 'Montserrat', sans-serif;
-    font-size:1rem;
-    font-weight: 500;
-  }
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 /* Utility classes */
-.row{
+.row {
   flex-direction: row;
 }
-.column{
+
+.column {
   flex-direction: column;
 }
+
 li {
   list-style: none;
 }
@@ -23,20 +26,22 @@ li {
 a {
   text-decoration: none;
 }
-h3{
-      font-size: 1.5rem;
+
+h3 {
+  font-size: 1.5rem;
 }
 
-.container-side{
-      display: flex;
-      font-weight: bold;
-      vertical-align: top;
-      padding: 5px;
-
+.container-side {
+  display: flex;
+  font-weight: bold;
+  vertical-align: top;
+  padding: 5px;
 }
+
 .d-flex {
   display: flex;
 }
+
 .flex-wrap {
   flex-wrap: wrap;
   justify-content: space-around;
@@ -46,15 +51,17 @@ body {
   background-color: #333;
   color: white;
 }
+
 .wrapper {
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#site_content{
+#site_content {
   height: calc(100% - 60px);
 }
+
 /* Side menu */
 /* SIDEBAR MAIN MENU */
 .side-bar {
@@ -88,18 +95,20 @@ body {
   align-items: center;
 }
 
-.home {
+.spotify-bar {
   margin: 30px 0;
 }
 
-.home li a {
+.spotify-bar li a {
   padding-left: 15px;
   height: 45px;
 }
+.spotify-bar li a:hover {
+  color: white;
+  border-left: 3px solid #adff2f;
+}
 
-
-
-.home span {
+.spotify-bar span {
   margin-left: 10px;
 }
 
@@ -109,6 +118,7 @@ body {
   margin-bottom: 15px;
   margin-left: 15px;
 }
+
 .create-playlist a {
   display: flex;
   align-items: center;
@@ -123,8 +133,6 @@ body {
   font-size: 40px;
   color: #535353;
 }
-
-
 
 .create-playlist a:hover .fas,
 .create-playlist a:hover span {
@@ -143,6 +151,7 @@ body {
 
 .name-playlist li a:hover {
   color: white;
+
 }
 
 .side-bar-bottom {
@@ -187,6 +196,7 @@ body {
   border-radius: 100%;
   margin-right: 10px;
 }
+
 .btn-upgrade {
   background-color: transparent;
   border: 1px solid white;
@@ -206,57 +216,63 @@ body {
 /* COVERS SECTION */
 .covers_section {
   background-color: #141922;
-  padding: 20px;;
+  padding: 20px;
+  ;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
   /* margin-top: 60px; */
   width: 100%
 }
-.navbar{
+
+.navbar {
   padding: 10px 10px;
- justify-content: center;
- flex-wrap: wrap;
-  }
-  .navbar> a {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar>a {
   margin: 10px 10px;
   text-decoration: none;
   color: #72747A;
   margin-right: 3%
 }
-.navbar> a:hover {
+
+.navbar>a:hover {
   color: white;
 }
-.cover{
-  justify-content:flex-start;
+
+.cover {
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
-.card{
-  align-items:center;
- text-align:center;
- margin-right: 3%
+
+.card {
+  align-items: center;
+  text-align: center;
+  margin-right: 3%
 }
-.created_for{
+
+.created_for {
   flex-wrap: wrap;
 }
-.card-img{
+
+.card-img {
   width: 200px
 }
-.card > *{
+
+.card>* {
   width: 200px
 }
-.john{
+
+.john {
   margin-bottom: 1%
 }
-span{
+
+span {
   color: #72747A;
   margin-bottom: 1%
-
-  }
-
-
-
-
+}
 
 .subscribe_banner {
   position: fixed;
@@ -265,15 +281,14 @@ span{
   width: calc(100% - 300px);
   height: 60px;
   background-color: #080B12;
-
 }
-
 
 /* FOOTER */
 #site_footer {
   background-color: #282828;
   height: 100px;
 }
+
 .player {
   justify-content: space-between;
   align-items: center;
@@ -328,7 +343,6 @@ span{
   align-items: center;
 }
 
-
 .timebar .cursor {
   width: 100%;
   background-color: gray;
@@ -368,18 +382,16 @@ span{
   height: 5px;
   border-radius: 10px;
 }
+
 /* /FOOTER */
-
-
-
 @media screen and (max-width: 670px) {
   .side-bar {
     background-color: black;
     width: 150px;
     min-width: 150px;
-
   }
-#site_content > aside > div.side-bar-top > div.home > ul > li > a > span  {
-    opacity: 0}
 
+  #site_content>aside>div.side-bar-top>div.home>ul>li>a>span {
+    opacity: 0
+  }
 }

@@ -1,180 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify clone</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" <!-- The above 3 meta tags *must*
-        come first in the head; any other head content must come *after* these tags -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify clone</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" <!-- The above 3 meta tags *must*
+    come first in the head; any other head content must come *after* these tags -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <aside class="wrapper d-flex">
     <main id="site_content" class="d-flex">
-            <!-- SIDEBAR MAIN MENU -->
-  <aside class="side-bar d-flex">
-    <div class="side-bar-top">
-      <div class="logo"><img src="./img/logo.svg" alt=""></div>
-      <div class="home">
-        <ul>
-          <li><a href="#"><img src="./img/home.svg" alt=""><span>Home</span></a></li>
-          <li><a href="#"><img src="./img/search.svg" alt=""><span>Cerca</span></a></li>
-          <li><a href="#"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
-        </ul>
-      </div>
-      <div class="playlist">
-        <h5>PLAYLIST</h5>
-        <div class="create-playlist"><a href="#"> <i class="fas fa-plus-square"></i> <span>Crea Playlist</span> </a>
+      <!-- SIDEBAR MAIN MENU -->
+      <aside class="side-bar d-flex">
+        <div class="side-bar-top">
+          <div class="logo"><img src="./img/logo.svg" alt=""></div>
+          <div class="spotify-bar">
+            <ul>
+              <li><a href="#"><img src="./img/home.svg" alt=""><span>Home</span></a></li>
+              <li><a href="#"><img src="./img/search.svg" alt=""><span>Cerca</span></a></li>
+              <li><a href="#"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
+            </ul>
+          </div>
+          <div class="playlist">
+            <h5>PLAYLIST</h5>
+            <div class="create-playlist"><a href="#"> <i class="fas fa-plus-square"></i> <span>Crea Playlist</span> </a>
+            </div>
+            <div class="name-playlist">
+              <ul>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="name-playlist">
-          <ul>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-          </ul>
+        <div class="side-bar-bottom">
+          <div class="install"><a href=""><img src="./img/download.svg" alt=""><span>Installa app</span></a></div>
+          <div class="username"><a href="#"><img src="./img/profile.svg" alt=""><span>John Doe</span></a></div>
         </div>
+      </aside>
+      <section class="covers_section">
+        <!-- /SIDEBAR MAIN MENU -->
+        <section class="covers_section">
+          <div class="subscribe_banner">
+            <button type="button" class="btn btn-upgrade">EFFETTUA L'UPGRADE</button>
+          </div>
+
+          <div class="navbar d-flex">
+            <a href="#">IN EVIDENZA</a>
+            <a href="#">PODCAST</a>
+            <a href="#">CLASSIFICHE</a>
+            <a href="#">GENERI E MOOD</a>
+            <a href="#">NUOVE USCITE</a>
+            <a href="#">SCOPRI</a>
+          </div>
+
+          <h2>Recently played</h2>
+          <div class=" d-flex cover">
+            <div class="card">
+              <img class="card-img" src="img/metal_lifting.jpg">
+              <h3>Heavy Metal</h3>
+              <span>Subtitle</span>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/stranger.jpg">
+              <h3>Stranger Things, Vol. 1(a Netflix original series soundtrack)</h3>
+              <span>Kyle Dixon & Micheal</span>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/aquietplace.jpeg">
+
+              <h3>A quiet place</h3>
+              <span>Subtitle</span>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/split.jpeg">
+              <h3>Split</h3>
+              <span>Subtitle</span>
+            </div>
+
+            <div class="card">
+              <img class="card-img" src="img/metal_lifting.jpg">
+              <h3>Heavy Metal</h3>
+              <span>Subtitle</span>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/sinister.jpeg">
+              <h3>Sinister</h3>
+              <span>subtitle</span>
+            </div>
+          </div>
+
+
+
+
+          </div>
+          <div class="john">
+            <h2>Creato per John Doe</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti</span>
+          </div>
+
+          <div class="created_for d-flex">
+
+            <div class="card">
+              <img class="card-img" src="img/radar.jpeg">
+              <h3>Release Radar</h3>
+
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/radar.jpeg">
+              <h3>Daily mix 1</h3>
+
+            </div>
+
+          </div>
+          <div id="popular"></div>
+
+
+        </section>
+    </main>
+    <footer id="site_footer">
+      <div class="player d-flex">
+
+        <div class="track d-flex">
+          <div class="track-cover d-flex">
+            <img src="img/sinister.jpeg" alt="">
+            <div>
+              <h4>Sinister</h4>
+              <p>Brano Nome</p>
+            </div>
+          </div>
+          <div class="track-fav d-flex">
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+          </div>
+        </div>
+
+        <div class="play d-flex">
+
+          <div class="player-controls d-flex">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+
+          <div class="timebar d-flex">
+            <div class="time-passed"><span>0:25</span></div>
+            <div class="cursor">
+              <div class="cursor-overlay"></div>
+            </div>
+            <div class="time-remaining"><span>4:35</span></div>
+          </div>
+
+        </div>
+        <div class="controls d-flex">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="cursor">
+            <div class="cursor-overlay"></div>
+          </div>
+        </div>
+
+
       </div>
-    </div>
-    <div class="side-bar-bottom">
-      <div class="install"><a href=""><img src="./img/download.svg" alt=""><span>Installa app</span></a></div>
-      <div class="username"><a href="#"><img src="./img/profile.svg" alt=""><span>John Doe</span></a></div>
-    </div>
-  </aside>
-  <section class="covers_section">
-    <!-- /SIDEBAR MAIN MENU -->
-            <section class="covers_section">
-                <div class="subscribe_banner">
-                    <button type="button" class="btn btn-upgrade">EFFETTUA L'UPGRADE</button>
-                </div>
-
-              <div class="navbar d-flex">
-                     <a href="#">IN EVIDENZA</a>
-                     <a href="#">PODCAST</a>
-                     <a href="#">CLASSIFICHE</a>
-                     <a href="#">GENERI E MOOD</a>
-                     <a href="#">NUOVE USCITE</a>
-                     <a href="#">SCOPRI</a>
-                     </div>
-
-                <h2>Recently played</h2>
-                <div class=" d-flex cover">
-                <div class="card">
-                  <img class="card-img" src="img/metal_lifting.jpg">
-                                <h3>Heavy Metal</h3>
-                                <span>Subtitle</span>
-                </div>
-                <div class="card">
-                  <img class="card-img" src="img/stranger.jpg">
-                                  <h3>Stranger Things, Vol. 1(a Netflix original series soundtrack)</h3>
-                                  <span>Kyle  Dixon & Micheal</span>
-                </div>
-                <div class="card">
-                  <img class="card-img" src="img/aquietplace.jpeg">
-
-                              <h3>A quiet place</h3>
-                            <span>Subtitle</span>
-                </div>
-                <div class="card">
-                  <img class="card-img" src="img/split.jpeg">
-                             <h3>Split</h3>
-                           <span>Subtitle</span>
-                </div>
-
-                <div class="card">
-                  <img class="card-img" src="img/metal_lifting.jpg">
-                                <h3>Heavy Metal</h3>
-                                <span>Subtitle</span>
-                </div>
-                <div class="card">
-                  <img class="card-img" src="img/sinister.jpeg">
-                           <h3>Sinister</h3>
-                           <span>subtitle</span>
-                </div>
-                </div>
-
-
-
-
-                </div>
-                <div class="john">
-                  <h2>Creato per John Doe</h2>
-                  <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                </div>
-
-                <div class="created_for d-flex">
-
-                  <div class="card">
-                    <img class="card-img" src="img/radar.jpeg">
-                             <h3>Release Radar</h3>
-
-                  </div>
-                  <div class="card">
-                    <img class="card-img" src="img/radar.jpeg">
-                             <h3>Daily mix 1</h3>
-
-                  </div>
-
-                </div>
-                <div id="popular"></div>
-
-
-            </section>
-        </main>
-        <footer id="site_footer">
-              <div class="player d-flex">
-
-                <div class="track d-flex">
-                  <div class="track-cover d-flex">
-                    <img src="img/sinister.jpeg" alt="">
-                    <div>
-                      <h4>Sinister</h4>
-                      <p>Brano Nome</p>
-                    </div>
-                  </div>
-                  <div class="track-fav d-flex">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
-                  </div>
-                </div>
-
-                <div class="play d-flex">
-
-                  <div class="player-controls d-flex">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i class="far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo-alt"></i>
-                  </div>
-
-                  <div class="timebar d-flex">
-                    <div class="time-passed"><span>0:25</span></div>
-                    <div class="cursor">
-                      <div class="cursor-overlay"></div>
-                    </div>
-                    <div class="time-remaining"><span>4:35</span></div>
-                  </div>
-
-                </div>
-                <div class="controls d-flex">
-                  <i class="fas fa-list"></i>
-                  <i class="fas fa-desktop"></i>
-                  <i class="fas fa-volume-up"></i>
-                  <div class="cursor">
-                    <div class="cursor-overlay"></div>
-                  </div>
-                </div>
-
-
-              </div>
-            </footer>
+    </footer>
 
 
 </body>
+
 </html>
