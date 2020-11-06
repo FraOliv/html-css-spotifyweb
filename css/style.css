@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
+  font-family: 'GothamPro';
+  font-size: 1.5rem
+    font-weight: 600;
+  min-width: 644px
 }
 
 /* Utility classes */
@@ -70,6 +71,7 @@ body {
   min-width: 300px;
   flex-flow: column;
   justify-content: space-between;
+
 }
 
 .logo {
@@ -90,9 +92,10 @@ body {
 }
 
 .side-bar-top li a {
-  color: #535353;
+  color: #a3a3a3;
   display: flex;
   align-items: center;
+  font-size: 1.5rem
 }
 
 .spotify-bar {
@@ -113,8 +116,7 @@ body {
 }
 
 .playlist h5 {
-  font-size: 1.0rem;
-  font-weight: 600;
+
   margin-bottom: 15px;
   margin-left: 15px;
 }
@@ -122,6 +124,7 @@ body {
 .create-playlist a {
   display: flex;
   align-items: center;
+
 }
 
 .create-playlist,
@@ -142,7 +145,7 @@ body {
 .create-playlist span {
   color: #535353;
   margin-left: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem
 }
 
 .name-playlist ul li {
@@ -206,21 +209,30 @@ body {
   right: 0;
   bottom: 30%;
   margin-right: 30px;
-  font-size: 0.9em;
+  font-size: 1rem;
 }
 
 .btn-upgrade:hover {
   color: white;
+}
+.subscribe_banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 300px);
+  height: 60px;
+  background-color: #080B12;
+  overflow:hidden;
 }
 
 /* COVERS SECTION */
 .covers_section {
   background-color: #141922;
   padding: 20px;
-  ;
+
   overflow-y: auto;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 45px;
   /* margin-top: 60px; */
   width: 100%
 }
@@ -274,14 +286,7 @@ span {
   margin-bottom: 1%
 }
 
-.subscribe_banner {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: calc(100% - 300px);
-  height: 60px;
-  background-color: #080B12;
-}
+
 
 /* FOOTER */
 #site_footer {
@@ -384,14 +389,9 @@ span {
 }
 
 /* /FOOTER */
-@media screen and (max-width: 670px) {
-  .side-bar {
-    background-color: black;
-    width: 150px;
-    min-width: 150px;
-  }
+@media screen and (max-width: 641px) {
 
-  #site_content>aside>div.side-bar-top>div.home>ul>li>a>span {
-    opacity: 0
-  }
+.subscribe_banner {
+  width: calc(100% - 300px);
+}
 }
