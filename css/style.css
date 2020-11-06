@@ -351,7 +351,7 @@ span {
   margin: 0 20px;
 }
 
-.timebar .cursor-overlay {
+.timebar .footer-bar {
   width: 25%;
   background-color: lightgray;
   height: 5px;
@@ -376,7 +376,7 @@ span {
   margin: 0 20px 0 5px;
 }
 
-.controls .cursor-overlay {
+.controls .footer-bar {
   width: 25%;
   background-color: lightgray;
   height: 5px;
