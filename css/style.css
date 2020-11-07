@@ -111,6 +111,9 @@ body {
   border-left: 3px solid #adff2f;
 }
 
+.spotify-bar span:hover{
+  color: white;
+}
 .spotify-bar span {
   margin-left: 10px;
 }
@@ -228,7 +231,7 @@ body {
 /* COVERS SECTION */
 .covers_section {
   background-color: #141922;
-  padding: 20px;
+  margin-left: 10px;
 
   overflow-y: auto;
   overflow-x: hidden;
@@ -251,7 +254,10 @@ body {
 }
 
 .navbar>a:hover {
-  color: white;
+
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #ADFF2F;
 }
 
 .cover {
@@ -262,7 +268,39 @@ body {
 .card {
   align-items: center;
   text-align: center;
-  margin-right: 3%
+  
+}
+
+
+.img{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+     background-color: #000000a6;
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0;
+  background-color: rbga;
+ 
+
+}
+.image-play{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 4em;
+
+}
+.overlay:hover{
+  opacity: 27;
+}
+.card:not(:last-child){
+  margin-right: 10px;
 }
 
 .created_for {
@@ -270,11 +308,11 @@ body {
 }
 
 .card-img {
-  width: 200px
+  width: 100%
 }
 
 .card>* {
-  width: 200px
+  width: 240px
 }
 
 .john {
