@@ -10,6 +10,7 @@ body {
  min-width: 644px;
  background-color: #141922;
  color: white;
+ overflow: hidden;
 }
 
 /* Utility classes */
@@ -214,13 +215,14 @@ margin-left: -5px;
  height: 60px;
  background-color: #080B12;
  overflow: hidden;
+ z-index: 1
 }
 
 /* COVERS SECTION */
 .covers_section {
  background-color: #141922;
  margin-left: 10px;
- overflow-y: hidden;
+ overflow-y: auto;
  overflow-x: hidden;
  padding-top: 45px;
  /* margin-top: 60px; */
