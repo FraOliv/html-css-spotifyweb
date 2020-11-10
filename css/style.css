@@ -143,9 +143,10 @@ h3 {
   font-size: 1.5rem
 }
 
-.name-playlist ul li {
+.playlist >.name-playlist ul  {
   margin: 10px 0;
-}
+  color: grey;
+  }
 
 .name-playlist li a:hover {
   color: white;
@@ -556,6 +557,7 @@ a.play_btn:hover {
 }
 
 /* /player */
+680
 @media all and (max-width:420px) {
   .card {
     width: calc(100% / 2);
@@ -591,6 +593,13 @@ a.play_btn:hover {
   .track_info {
     width: 43%;
   }
+}
+@media all and (max-height:680px) {
+  .side-bar{
+    overflow-y: scroll
+  }
+
+
 }
 
 @media all and (max-width:768px) {
