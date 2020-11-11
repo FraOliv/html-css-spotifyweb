@@ -77,7 +77,8 @@ h3 {
   color: #a3a3a3;
   display: flex;
   align-items: center;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  margin-bottom: 18px;
 }
 
 .side-bar-top {
@@ -557,11 +558,12 @@ a.play_btn:hover {
 }
 
 /* /player */
-680
+
 @media all and (max-width:420px) {
   .card {
     width: calc(100% / 2);
   }
+ 
 
   .expand-sm span, .expand-sm .playlist {
     display: none;
@@ -575,12 +577,16 @@ a.play_btn:hover {
   .player_center {
     margin-bottom: 1%;
   }
+
 }
 
-@media screen and (max-width: 639px) {
+@media all and (max-width: 639px) {
   .player_left, .player_right, .player_center {
     width: calc(100% / 3);
   }
+  nav {
+    padding: 60px 10px;
+}
 
   .volume_slider {
     width: 51%;
@@ -596,7 +602,8 @@ a.play_btn:hover {
 }
 @media all and (max-height:680px) {
   .side-bar{
-    overflow-y: scroll
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
 
@@ -660,6 +667,7 @@ a.play_btn:hover {
 
   .subscribe_banner {
     width: calc(100% - 50px);
+    height: 50px;
   }
 
   .track,
@@ -672,6 +680,9 @@ a.play_btn:hover {
   .card {
     width: calc(100%/4)
   }
+    nav {
+      padding: 40px 10px;
+  }
 
   .track,
   .controls {
@@ -682,5 +693,8 @@ a.play_btn:hover {
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .card {
     width: calc(100% / 6);
+  }
+    nav {
+      padding: 40px 10px;
   }
 }
